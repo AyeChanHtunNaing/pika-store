@@ -1,27 +1,16 @@
 # PikaStore
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+### Description
+This project is just a Mini E-Commerce App with Angular and FakeStore API.
 
-## Development server
+### Home Page
+![image](https://github.com/AyeChanHtunNaing/pika-store/blob/master/src/assets/demo/homepage.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Cart with items
+![image](https://github.com/AyeChanHtunNaing/pika-store/blob/master/src/assets/demo/cart.png)
 
-## Code scaffolding
+### Cart without item
+![image](https://github.com/AyeChanHtunNaing/pika-store/blob/master/src/assets/demo/nocart.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Product Search with Ng2 Search Filter
+![image](https://github.com/AyeChanHtunNaing/pika-store/blob/master/src/assets/demo/search.png)
