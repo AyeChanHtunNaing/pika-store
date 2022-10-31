@@ -11,6 +11,7 @@ export class CartComponent implements OnInit {
 
   public products : any = [];
   public grandTotal !: number;
+
   constructor(private cartService : CartService) { }
 
   ngOnInit(): void {
@@ -26,5 +27,7 @@ export class CartComponent implements OnInit {
   emptycart(){
     this.cartService.removeAllCart();
   }
-
+  checkout(){
+    alert("Checkout successfully! we will contact soon")
+  }
 }
