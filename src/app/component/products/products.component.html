@@ -1,0 +1,32 @@
+<header>
+  <div class="navbar navbar-dark bg-primary shadow-sm">
+    <div class="navbar-brand align-item-center d-flex">
+
+      <i class="fa-solid fa-shop" style="font-size: 40px"></i>
+      <strong class="mx-2"  style="font-size: 30px">Pika Store</strong>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="search products" [(ngModel)]="searchTerm" >
+      </div>
+      <span class="fas fa-search search-icon"></span>
+    </div>
+    <button class="btn btn-primary" routerLink="/cart">
+      <i style="font-size: 25px" class="fas fa-cart-plus"></i>
+      <div style="font-size: 10px" class="badge bg-danger">{{totalItem}}</div>
+    </button>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of productList | filter:searchTerm">
+      <div class="card col-md-3 mt-5">
+        <img src="{{item.image}}" alt="">
+        <h5 class="text-deco">{{item.title}}</h5>
+        <p class="text-deco">{{item.description}}</p>
+        <p><strong>Price : ${{item.price}}</strong></p>
+        <button class="btn btn-primary" (click)="addtocart(item)">Add to Cart</button>
+      </div>
+    </ng-container>
+
+  </div>
+</div>
